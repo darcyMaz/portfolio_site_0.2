@@ -30,7 +30,40 @@ export const Hero = () => {
             }
         </div>
 
+        {/* Content */}
+        <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+                {/* Left column - Text content */}
+                <div className="space-y-8">
+                    <div className="animate-fade-in">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+                            <span className="w-2 h-2 bg-primary rounded-full animate-pulse"/> 
+                                Game Developer
+                        </span>
+                    </div>
 
+                    {/* Headline - we'll change this lol */}
+                    <div>
+                        <h1>
+                            Making <span className="text-primary glow-text"> games </span>
+                            <br/>
+                            is my
+                            <br/>
+                            <span className="font-serif italic font-normal text-white">
+                            passion.
+                            </span>
+                        </h1>
+                        <p className="text-lg text-muted-foreground max-w-lg">
+                            Hi, my name is Darcy Mazloum and this paragraph is a brief on who I am. There is enough space
+                            for this paragraph to be three to four lines.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {/* Right column - Profile Image */}
+            
+        </div>
 
     </section>
     );
