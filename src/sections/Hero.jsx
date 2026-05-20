@@ -1,11 +1,13 @@
-
+import { Download, ArrowRight, Bot } from "lucide-react";
+import { Button } from "@/components/Button";
+import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 export const Hero = () => {
     return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0">
-            <img src="/hero-bg.jpg" alt="Hero image" className="w-full h-full object-cover opacity-40" />
+            <img src="/psp-bg.jpg" alt="Hero image" className="w-full h-full object-cover opacity-40" />
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
@@ -35,16 +37,16 @@ export const Hero = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left column - Text content */}
                 <div className="space-y-8">
-                    <div className="animate-fade-in">
+                    <div>
                         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                             <span className="w-2 h-2 bg-primary rounded-full animate-pulse"/> 
-                                Game Developer
+                            Game Developer
                         </span>
                     </div>
 
                     {/* Headline - we'll change this lol */}
                     <div>
-                        <h1>
+                        <h1 className="text-5xl md:text-6xl lg:text-7xl leading-tight animate-fade-in animation-delay-100">
                             Making <span className="text-primary glow-text"> games </span>
                             <br/>
                             is my
@@ -53,11 +55,37 @@ export const Hero = () => {
                             passion.
                             </span>
                         </h1>
-                        <p className="text-lg text-muted-foreground max-w-lg">
+                        <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
                             Hi, my name is Darcy Mazloum and this paragraph is a brief on who I am. There is enough space
                             for this paragraph to be three to four lines.  
                         </p>
                     </div>
+
+                    {/* CTAs */}
+                    <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+                        <Button size="lg">
+                            Contact Me <ArrowRight className="w-5 h-5"/>    
+                        </Button>
+                        <AnimatedBorderButton> <Download className="w-5 h-5"/> Download CV </AnimatedBorderButton>
+                    </div>
+
+                    {/* Social Links */}
+                    <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+                        <span className="text-sm text-muted-foreground"> Follow Me: </span>
+                        
+                        <a className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300" href="https://www.github.com/darcyMaz/"> 
+                            <img alt="" src="/github.svg" style={{width:50, height:'auto'}}/>
+                        </a>
+
+                        <a className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300" href="https://www.linkedin.com/in/darcy-mazloum/"> 
+                            <img alt="Blue " src="/linkedin.png" style={{width:50, height:'auto'}}/>
+                        </a>
+
+
+
+                        
+                    </div>
+
                 </div>
             </div>
 
