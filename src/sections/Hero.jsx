@@ -61,20 +61,27 @@ export const Hero = () => {
                         </span>
                     </div>
 
-                    {/* Headline - we'll change this lol */}
+                    {/* Headline */}
                     <div>
                         <h1 className="text-5xl md:text-6xl lg:text-7xl leading-tight animate-fade-in animation-delay-100">
+                            Darcy  Mazloum
+                        </h1>
+
+                        <div className="py-1"></div>
+
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight animate-fade-in animation-delay-100"> 
                             Making <span className="text-primary glow-text"> games </span>
-                            <br/>
-                            is my
+                            and building
                             <br/>
                             <span className="font-serif italic font-normal text-white">
-                            passion.
+                            memories.
                             </span>
-                        </h1>
+                        </h2>
+
+                        <div className="py-4"></div>
+
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
-                            Hi, my name is Darcy Mazloum and this paragraph is a brief on who I am. There is enough space
-                            for this paragraph to be three to four lines.  
+                            Hi, my name is Darcy Mazloum. Welcome to my website! Check out the awesome games I've made and the varied (and at times eccentric) experience I have.
                         </p>
                     </div>
 
@@ -128,6 +135,8 @@ export const Hero = () => {
                             </div>
                         </div>                            */}
 
+                        
+
                         <div className="overflow-hidden">
                             <div className="flex animate-marqueeOne">
                                 
@@ -143,6 +152,12 @@ export const Hero = () => {
                                 <div className="px-3"/>
                                 <img src="/maze-assignment/keys-maze.png" className="w-lg object-cover rounded-2xl" alt="Three keys, each a different color, each with a number in the center 1, 2, and 3"/>
 
+                            </div>
+
+                            <div className="relative mx-auto lg:max-w-1/12 lg:bottom-13 lg:left-64 sm:max-w-1/6 sm:bottom-16 sm:left-44 ">
+                                <div className="absolute -bottom-12 -right-16 glass rounded-xl px-4 py-3 animate-float">
+                                    <img src="/dm_profile.jpg" alt="Darcy Mazloum, professional headshot" className="aspect-4/5 object-cover rounded-2xl"/>
+                                </div>
                             </div>
                         </div>
 
