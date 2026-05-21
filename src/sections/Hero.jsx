@@ -70,18 +70,18 @@ export const Hero = () => {
                         <div className="py-1"></div>
 
                         <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight animate-fade-in animation-delay-100"> 
-                            Making <span className="text-primary glow-text"> games </span>
-                            and building
+                            Building <span className="text-primary glow-text"> games </span>
+                            and making
                             <br/>
                             <span className="font-serif italic font-normal text-white">
-                            memories.
+                            friends.
                             </span>
                         </h2>
 
                         <div className="py-4"></div>
 
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
-                            Hi, my name is Darcy Mazloum. Welcome to my website! Check out the awesome games I've made and the varied (and at times eccentric) experience I have.
+                            Welcome to my website! Check out the awesome games I've made, learn about my education, and see the varied (and at times eccentric) experience I have.
                         </p>
                     </div>
 
@@ -138,7 +138,7 @@ export const Hero = () => {
                         
 
                         <div className="overflow-hidden">
-                            <div className="flex animate-marqueeOne">
+                            <div className="flex animate-marquee-pics">
                                 
                                 <img src="/gigi/at the bar.png" className="w-lg object-cover rounded-2xl" alt="Black and white 2d profile video game, in a bar, main character center and bartender behind bar" />
                                 <div className="px-3"/>
@@ -154,7 +154,7 @@ export const Hero = () => {
 
                             </div>
 
-                            <div className="relative mx-auto lg:max-w-1/12 lg:bottom-13 lg:left-64 sm:max-w-1/6 sm:bottom-16 sm:left-44 ">
+                            <div className="relative mx-auto 2xl:max-w-1/8 2xl:bottom-16 2xl:left-54 xl:max-w-1/9 xl:bottom-14 xl:left-42 lg:max-w-1/7 lg:bottom-14 lg:left-28 md:max-w-1/7 md:bottom-16 md:left-56 sm:max-w-1/7 sm:bottom-16 sm:left-42 max-w-1/4 bottom-14 left-32">
                                 <div className="absolute -bottom-12 -right-16 glass rounded-xl px-4 py-3 animate-float">
                                     <img src="/dm_profile.jpg" alt="Darcy Mazloum, professional headshot" className="aspect-4/5 object-cover rounded-2xl"/>
                                 </div>
