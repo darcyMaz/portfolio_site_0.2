@@ -3,6 +3,7 @@ import { About } from "@/sections/About";
 import { Contacts } from "@/sections/Contacts";
 import { Projects } from "@/sections/Projects";
 import { Navbar } from "@/layout/Navbar";
+import { Education } from "@/sections/Education";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
           <Hero />
           <About />
           <Projects />
+          <Education />
           <Contacts />
 
       </main>

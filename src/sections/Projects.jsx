@@ -5,60 +5,54 @@ export const Projects = () => {
     const projects = [
         {
             title: "Mendacity",
-            description: " description of the game",
+            description: "A Unity 3D prototype. A grotesque horror game. You must keep the creature alive or risk endangering the whole world.",
             image: "/mendacity/mainmenu.png",
-            tags: ["Unity", "C#"],
-            link: "#",
-            github: "#"
+            tags: ["Unity", "C#", "3D"],
+            link: "https://github.com/EmilM358/AwesomeHorrorGame/tree/main"
         },
         {
             title: "Gigi's Gone Missing... Again.",
-            description: " description of the game",
+            description: "A Unity 2D prototype. A noir mystery game. Your cousin Gigi has gone missing... again. Who did he get involved with this time? It's up to you to find out.",
             image: "/gigi/mainmenu.png",
-            tags: ["Unity", "C#"],
-            link: "#",
-            github: "#"
+            tags: ["Unity", "C#", "2D"],
+            link: "https://github.com/darcyMaz/Gigis_Gone_Missing..._Again"
         },
         {
             title: "RoboHacks 2023",
-            description: " description of the hackathon",
-            image: "/",
+            description: "Organized a robotics hackathon with over 150 participants as a member of McGill Robotics.",
+            image: "/robohacks23.png",
             tags: ["Leadership", "Event Planning", "Organization", "Public Speaking"],
-            link: "#",
-            github: "#"
+            link: "https://mcgillrobotics.com/2023-2024-team",
         },
         {
-            title: "Farming",
-            description: "I'm also a farmer :)",
-            image: "/",
-            tags: ["Fun", "Planting Garlic Cloves", "Manual Labour"],
-            link: "#",
-            github: "#"
-        },
-        {
-            title: "Maze Generator",
-            description: "Generate Random Maze",
-            image: "",
-            tags: ["Unity", "C#", "Algorithm Design", "Search Algorithms"],
-            link: "#",
-            github: "#"
+            title: "Square Maze Generator",
+            description: "Generate a Random Square Maze and build it in Unity 3D.",
+            image: "/Maze Gen.png",
+            tags: ["Unity", "C#", "3D",  "Algorithm Design", "Search Algorithms"],
+            link: "https://github.com/darcyMaz/Maze-Generator"
         },
         {
             title: "This website!",
-            description: "based on a tutorial but many changes to suit my needs",
-            image: "a gif of the buttons would be cool or maybe of working on the marquee lol",
+            description: "I made this website following a tutorial by PedroTech on YouTube. However, I changed a handful of features to better suit my needs.",
+            image: "/site github.png",
             tags: ["React", "HTML", "CSS", "Javascript", "JS"],
-            link: "#",
-            github: "#"
+            link: "https://github.com/darcyMaz/portfolio_site_0.2"
         },
         {
-            title: "Sustainable Committee",
-            description: " get the actual name please",
-            image: "/",
-            tags: ["Volunteering", "Community"],
+            title: "YTtoPSP",
+            description: "Python script that takes as input YouTube playlists and outputs music files that are compatible with any PSP (mine pictured).",
+            image: "/psp.jpg",
+            tags: ["Python", "Scripting"],
+            link: "https://github.com/darcyMaz/YTtoPSP",
+        },
+        {
+            title: "Farming",
+            description: "I'm also a farmer. My family grows and sells garlic and blueberries here in the Eastern Townships, Quebec.",
+            image: "/farming.jpg",
+            tags: ["Planting", "Harvesting", "Workin' Hard", "Havin' Fun"],
             link: "#",
-            github: "#"
         }
+        
     ]
 
     return (
@@ -96,13 +90,13 @@ export const Projects = () => {
                                 {/* Overlay Links */}
                                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <a href={project.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"> <ArrowUpRight className="w-5 h-5"/> </a>
-                                    <a href={project.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"> <button className="w-5 h-5"/> Github</a>
                                 </div>
                             </div>
                             
                             {/* Content */}
                             <div className="p-6 space-y-4">
                                 <div className="flex items-start justify-between">
+                                    
                                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                                         {project.title}
                                     </h3>

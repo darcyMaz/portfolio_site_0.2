@@ -14,9 +14,7 @@ const skills = [
     "Basic 3D Animation",
     "Public Speaking",
 ]
-const leisure = [
-    "Watching The Habs", "Farming", "Video Games (duh)", "Hanging Out with Friends", "Coding", "Arts and Crafts", "Reading"
-]
+
 
 export const Hero = () => {
 
@@ -93,7 +91,7 @@ export const Hero = () => {
                         <AnimatedBorderButton> <Download className="w-5 h-5"/> Download CV </AnimatedBorderButton>
                     </div>
 
-                    {/* Social Links */}
+                    {/* Social Links and Education */}
                     <div className="flex items-center gap-4 animate-fade-in animation-delay-400 border-12 border-transparent">
                         <span className="text-sm text-muted-foreground"> Socials: </span>
                         
@@ -104,7 +102,18 @@ export const Hero = () => {
                         <a className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in" href="https://www.linkedin.com/in/darcy-mazloum/"> 
                             <img alt="Linked In logo, black on transparent" src="/linkedin.svg" style={{width:50, height:'auto'}}/>
                         </a>
+
+                        <span className="text-sm text-muted-foreground"> Education: </span>
                         
+                        
+                        <a className="p-4 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in" href="https://www.dawsoncollege.qc.ca/aec/programs/independent-video-game-design/"> 
+                            <img alt="McGill University Logo" src="/mcgill logo.webp" style={{width:125, height:'auto'}}/>
+                        </a>
+                        
+                        <a className="p-4 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in" href="https://www.dawsoncollege.qc.ca/aec/programs/independent-video-game-design/"> 
+                            <img alt="Dawson Independent Video Game Design Porgram Logo" src="/ivgd logo.svg" style={{width:125, height:'auto'}}/>
+                        </a>
+
                     </div>
 
                 </div> 
