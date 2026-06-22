@@ -74,7 +74,7 @@ export const Navbar = () => {
                 )
             }
 
-            <Button> Contact Me </Button>
+            <Button onClick={HandleContactMe}> Contact Me </Button>
             </div>
         </div>)}
     </header>);

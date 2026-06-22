@@ -35,7 +35,7 @@ const education_items = [
 
 export const Education = () => {
     return (
-    <section id="education" className="py-32 relative overflow-hidden">
+    <section id="education" className="py-24 relative overflow-hidden">
         
         {/* Background */}
         <div className="absolute inset-0">

@@ -56,7 +56,7 @@ export const Projects = () => {
     ]
 
     return (
-    <section id="projects" className="py-32 relative overflow-hidden">
+    <section id="projects" className="py-16 relative overflow-hidden">
         
         {/* Background Glow */}
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3x1"/> 

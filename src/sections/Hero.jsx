@@ -104,7 +104,8 @@ export const Hero = () => {
                     </div>
 
                     {/* Social Links and Education */}
-                    <div className="flex items-center gap-4 animate-fade-in animation-delay-400 border-12 border-transparent">
+                    <div className="items-center gap-4 animate-fade-in animation-delay-400 border-12 border-transparent hidden xl:flex">
+                        
                         <span className="text-sm text-muted-foreground"> Socials: </span>
                         
                         <a className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300" href="https://www.github.com/darcyMaz/"> 
@@ -115,7 +116,7 @@ export const Hero = () => {
                             <img alt="Linked In logo, black on transparent" src="/linkedin.svg" style={{width:50, height:'auto'}}/>
                         </a>
 
-                        
+
                         <span className="text-sm text-muted-foreground"> Education: </span>
 
                         <a className="p-4 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in" href="https://www.cs.mcgill.ca/"> 
@@ -130,33 +131,9 @@ export const Hero = () => {
 
                 </div> 
                 
-                {/* Right column - Profile Image */}
+                {/* Right column - Marquee and Profile Image */}
                 <div className="space-y-8">
                     <div className="relative animate-fade-in animation-delay-300">
-
-                        {/* Profile Image */}
-                                                        {/*}
-                        <div className="relative max-w-md mx-auto">
-                            <div className="relative glass rounded-3xl p-2 glow-border">
-                                <img src="/dm_profile.jpg" alt="Darcy Mazloum, professional headshot" className="w-full aspect-4/5 object-cover rounded-2xl"/>
-                                                        */}
-                                {/* Floating Badge */}  {/*
-                                <div className="absolute -bottom-5 -right-4 glass rounded-xl px-4 py-3 animate-float">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"> </div>
-                                        <span className="text-sm font-medium"> Available For Work </span>
-                                    </div>
-                                </div>                   */}
-
-                                {/* Stats Badge */}      {/*
-                                <div className="absolute -top-4 -right-4 flass rounded-xl px-4 py-3 animate-float animation-delay-500 bg-card">
-                                    <div className="text-2xl font-bold text-primary">5+</div>
-                                    <div className="text-xs text-muted-foreground">Years Exp.</div>
-                                </div>
-                            </div>
-                        </div>                            */}
-
-                        
 
                         <div className="overflow-hidden">
                             <div className="flex animate-marquee-pics">
@@ -175,7 +152,7 @@ export const Hero = () => {
 
                             </div>
 
-                            <div className="relative mx-auto 2xl:max-w-1/8 2xl:bottom-16 2xl:left-54 xl:max-w-1/9 xl:bottom-14 xl:left-42 lg:max-w-1/7 lg:bottom-14 lg:left-28 md:max-w-1/7 md:bottom-16 md:left-56 sm:max-w-1/7 sm:bottom-16 sm:left-42 max-w-1/4 bottom-14 left-32">
+                            <div className="relative mx-auto 2xl:max-w-1/8 2xl:bottom-16 2xl:left-54 xl:max-w-1/9 xl:bottom-14 xl:left-42 lg:max-w-1/7 lg:bottom-14 lg:left-28 md:max-w-1/7 md:bottom-16 md:left-56 sm:max-w-1/7 sm:bottom-16 sm:left-42 max-w-1/4 bottom-14 left-16">
                                 <div className="absolute -bottom-12 -right-16 glass rounded-xl px-4 py-3 animate-float">
                                     <img src="/dm_profile.jpg" alt="Darcy Mazloum, professional headshot" className="aspect-4/5 object-cover rounded-2xl"/>
                                 </div>
@@ -185,7 +162,44 @@ export const Hero = () => {
                     </div>
                 </div>
 
+                
+
             </div>
+
+            <div className="w-full flex xl:hidden items-center justify-center"> 
+                {/* Socials and education buttons - Below the size 1280px, this appears and another component holding social and edu buttons dissapears.*/}
+                <div className="grid sm:grid-cols-2">
+
+                    {/* Social Links and Education */}
+                    <div className="flex items-center justify-center gap-4 animate-fade-in animation-delay-400 border-18 border-transparent">
+                        <span className="text-sm text-muted-foreground"> Socials: </span>
+                        
+                        <a className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300" href="https://www.github.com/darcyMaz/"> 
+                            <img alt="GitHub logo, black on transparent" src="/github.svg" style={{width:50, height:'auto'}}/>
+                        </a>
+
+                        <a className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in" href="https://www.linkedin.com/in/darcy-mazloum/"> 
+                            <img alt="Linked In logo, black on transparent" src="/linkedin.svg" style={{width:50, height:'auto'}}/>
+                        </a>
+                    </div>
+                    
+                    <div className="flex items-center justify-center gap-4 animate-fade-in animation-delay-400 border-18 border-transparent">
+
+                        <span className="text-sm text-muted-foreground"> Education: </span>
+
+                        <a className="p-4 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in" href="https://www.cs.mcgill.ca/"> 
+                            <img alt="McGill University Logo" src="/mcgill logo.webp" style={{width:125, height:'auto'}}/>
+                        </a>
+                        
+                        <a className="p-4 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in" href="https://www.dawsoncollege.qc.ca/aec/programs/independent-video-game-design/"> 
+                            <img alt="Dawson Independent Video Game Design Porgram Logo" src="/ivgd logo.svg" style={{width:125, height:'auto'}}/>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            
+            
 
             {/* Skills Section */} 
             <div className="mt-20 animate-fade-in animation-delay-600">
@@ -213,9 +227,9 @@ export const Hero = () => {
         </div>
 
         {/* Scoll down chevron */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
             <a
-            href="#about"
+            href="#projects"
             className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary">
                 <span className="text-xs uppercase tracking-wider">
                     Scroll
