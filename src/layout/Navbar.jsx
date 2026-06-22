@@ -3,17 +3,20 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-    {href: "#about", label: "About"},
     {href: "#projects", label: "Projects"},
     {href: "#education", label: "Education"},
-    {href: "#contacts", label: "Contacts"},
-    
 ];
 
 export const Navbar = () => {
     
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+
+    const HandleContactMe = () => {
+        const link = document.createElement('a');
+        link.href = '#contact';
+        link.click();
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -48,7 +51,7 @@ export const Navbar = () => {
         
             {/* Contact Me Button */}
             <div className="hidden md:block">
-                <Button size="sm"> Contact Me </Button>
+                <Button size="sm" onClick={HandleContactMe}> Contact Me </Button>
             </div>
 
 

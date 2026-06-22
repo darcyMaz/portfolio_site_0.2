@@ -18,11 +18,23 @@ const skills = [
 
 export const Hero = () => {
 
+    const HandleDownload = () => {
+        const link = document.createElement('a');
+        link.download = 'Darcy Mazloum CV';
+        link.href = '/darcy-cv.pdf';
+        link.click();
+    };
+    const HandleContactMe = () => {
+        const link = document.createElement('a');
+        link.href = '#contact';
+        link.click();
+    };
+
     return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0">
-            <img src="/psp-bg.jpg" alt="Hero image" className="w-full h-full object-cover opacity-40" />
+            <img src="/psp-bg.jpg" alt="Hero background" className="w-full h-full object-cover opacity-40" />
         </div>
 
         <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background" />
@@ -85,10 +97,10 @@ export const Hero = () => {
 
                     {/* CTAs */}
                     <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                        <Button size="lg">
+                        <Button size="lg" onClick={HandleContactMe}>
                             Contact Me <ArrowRight className="w-5 h-5"/>    
                         </Button>
-                        <AnimatedBorderButton> <Download className="w-5 h-5"/> Download CV </AnimatedBorderButton>
+                        <AnimatedBorderButton onclick={HandleDownload}> <Download className="w-5 h-5"/> Download CV </AnimatedBorderButton>
                     </div>
 
                     {/* Social Links and Education */}
@@ -103,10 +115,10 @@ export const Hero = () => {
                             <img alt="Linked In logo, black on transparent" src="/linkedin.svg" style={{width:50, height:'auto'}}/>
                         </a>
 
+                        
                         <span className="text-sm text-muted-foreground"> Education: </span>
-                        
-                        
-                        <a className="p-4 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in" href="https://www.dawsoncollege.qc.ca/aec/programs/independent-video-game-design/"> 
+
+                        <a className="p-4 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 animate-fade-in" href="https://www.cs.mcgill.ca/"> 
                             <img alt="McGill University Logo" src="/mcgill logo.webp" style={{width:125, height:'auto'}}/>
                         </a>
                         

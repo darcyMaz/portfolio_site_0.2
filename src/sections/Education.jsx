@@ -36,6 +36,34 @@ const education_items = [
 export const Education = () => {
     return (
     <section id="education" className="py-32 relative overflow-hidden">
+        
+        {/* Background */}
+        <div className="absolute inset-0">
+            <img src="/psp-bg.jpg" alt="Hero background" className="w-full h-full object-cover opacity-40" />
+        </div>
+
+        <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background" />
+        
+        {/* Green Dots */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-auto">
+            {[...Array(30)].map((_,i) => 
+                (
+                    <div 
+                        className="absolute w-1.5 h-1.5 rounded-full opacity-60"
+                        style={{
+                            background: "#20B2A6",
+                            left: `${Math.random() * 100}%`,
+                            top: `${Math.random() * 100}%`,
+                            animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
+                            animationDelay: `${Math.random() * 5}s`,
+                        }}
+                        key={i}
+                    />
+                )
+                               )
+            }
+        </div>
+
         <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"/>
 
         <div className="container mx-auto px-6 relative z-10">
