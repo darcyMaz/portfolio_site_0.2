@@ -18,7 +18,7 @@ export const Contacts = () => {
     });
 
     const handleSubmit = async (e) => {
-        e.preventdefault();
+        e.preventDefault();
 
         setIsLoading(true);
         setSubmitStatus({
@@ -51,7 +51,7 @@ export const Contacts = () => {
             setFormData({name: "", email: "", message: "",});
         }
         catch (err) {
-            console.err("EmailJS error: ", err);
+            console.error("EmailJS error: ", err);
             setSubmitStatus({
                 type: "error",
                 message: err.text || "Failed to send message. Please try again",
