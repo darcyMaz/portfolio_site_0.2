@@ -4,7 +4,7 @@ const education_items = [
         school: "Dawson College",
         program: "Independent Video Game Design",
         degree: "Attestation of Collegial Studies",
-        description: "Specializing in building games in all of its aspects. Programming in C# in the Unity Game Engine, 3D Modelling in Autodesk Maya, using Substance Painter to paint models, and learning all about design games.",
+        description: "Specializing in building games in all of its aspects. Programming in C# in the Unity Game Engine, 3D Modelling in Autodesk Maya, using Substance Painter to paint models, and learning all about designing games.",
         current: true,
     },
     {
@@ -13,14 +13,14 @@ const education_items = [
         program: "Double Major in Computer Science and Political Science",
         degree: "Bachelor of Arts and Sciences",
         description: "At McGill University, I completed two majors. One in Computer Science and one in Political Science. I learned an incredible amount of skills that perfectly suited me for video game development and design.",
-        current: false,
+        current: true,
     },
     {
         period: "2018-2020",
         school: "Marianopolis College",
         program: "Pure and Applied Sciences",
         degree: "DEC",
-        description: "My time at the CEGEP Marianopolis College showed me a variety of skills in the sciences including biology, chemistry, physics, and maths. I decided however, to pursue Computer Science.",
+        description: "My time at the CEGEP Marianopolis College showed me a variety of skills in the sciences including biology, chemistry, physics, and maths. I then decided to pursue Computer Science.",
         current: false,
     },
     {
@@ -28,7 +28,7 @@ const education_items = [
         school: "Loyola High School",
         program: "",
         degree: "High School Diploma",
-        description: "Born and raised in Montreal, I went to Loyola High School in Notre-Dame-de-Grace.",
+        description: "Born and raised in Montreal, I went to Loyola High School in Notre-Dame-de-Grace. I played on the Rugby team (scrum-half!) and competed in International Quiz Bee and Bowl winning the Canadian championship in 2015 and representing Canada at the international event.",
         current: false,
     },
 ]
