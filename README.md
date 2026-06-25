@@ -1,6 +1,6 @@
 # Personal Website
 
-[www.darcymazloum.com](https://darcymazloum.com)
+[www.darcymazloum.com](https://www.darcymazloum.com)
 
 This is my personal website, created using a tutorial by PedroTech on YouTube linked below.
 This website is a React-Vite project that uses Javascript.
