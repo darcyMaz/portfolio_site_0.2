@@ -18,12 +18,6 @@ const skills = [
 
 export const Hero = () => {
 
-    const HandleDownload = () => {
-        const link = document.createElement('a');
-        link.download = 'Darcy Mazloum CV';
-        link.href = '/darcy-cv.pdf';
-        link.click();
-    };
     const HandleContactMe = () => {
         const link = document.createElement('a');
         link.href = '#contact';
@@ -100,7 +94,7 @@ export const Hero = () => {
                         <Button size="lg" onClick={HandleContactMe}>
                             Contact Me <ArrowRight className="w-5 h-5"/>    
                         </Button>
-                        <AnimatedBorderButton onclick={HandleDownload}> <Download className="w-5 h-5"/> Download CV </AnimatedBorderButton>
+                        <a download="Darcy Mazloum CV" href="/darcy-cv.pdf"> <AnimatedBorderButton> <Download className="w-5 h-5"/> Download CV </AnimatedBorderButton> </a>
                     </div>
 
                     {/* Social Links and Education */}
