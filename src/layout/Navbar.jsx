@@ -33,7 +33,7 @@ export const Navbar = () => {
         <nav className="container mx-auto px-6 flex items-center justify-between"> 
             
             <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
-                DM <span className="text-primary">.</span>
+                Darcy Mazloum <span className="text-primary">.</span>
             </a>
 
             {/* Desktop Navigation Bar */}

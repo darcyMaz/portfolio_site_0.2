@@ -1,6 +1,6 @@
 import { Download, ArrowRight, Bot, ChevronDown } from "lucide-react";
 import { Button } from "@/components/Button";
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import Marquee from "react-fast-marquee";
 
 const technologies = [
