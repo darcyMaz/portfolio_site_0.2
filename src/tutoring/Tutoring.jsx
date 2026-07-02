@@ -15,9 +15,9 @@ export const Tutoring = () => {
             </div>
 
             {/* Content - Take the box format from Education section. */}
-            <div className="items-center min-h-screen mx-auto w-3xl"> {/**size changes need for width, or have it be percentage. Still tho 60% when huge, 80% below large */}
+            <div className="items-center min-h-screen mx-auto lg:w-2/3 w-4/5"> {/**size changes need for width, or have it be percentage. Still tho 60% when huge, 80% below large */}
                 {/* Content */}
-                <div className="pl-8 md:pl-0">
+                <div className="">
                     <div className="glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500">
                         <span className="text-sm text-primary font-medium">
                             time period
