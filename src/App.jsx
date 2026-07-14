@@ -9,6 +9,7 @@ function App() {
     return (
     <div className="min-h-screen overflow-x-hidden">
       
+       
       <Helmet>
         <title>Darcy Mazloum</title>
         <meta name="description" content="Darcy Mazloum's portfolio site. See my projects, experiences, and education."/>
