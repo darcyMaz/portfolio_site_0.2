@@ -10,6 +10,8 @@
 
   --color-secondary: #1f2830;
   --color-secondary-foreground: #20b2a6;
+  --color-secondary-foreground-1: #43e0d3;
+  --color-secondary-foreground-2: #31c47a;
 
   --color-muted: #252e37;
   --color-muted-foreground: #7a8491;
@@ -41,7 +43,7 @@
 @layer components {
   .glass {
     background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(4px);
     border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
   }
   .glass-strong {
