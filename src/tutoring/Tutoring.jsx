@@ -1,14 +1,14 @@
-import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+import { Button } from "@/components/Button"
 
 export const Tutoring = () => {
 
     return(
-        <div className="relative min-h-screen items-center overflow-hidden mt-48">
+        <div className="relative min-h-screen items-center overflow-hidden mt-24 md:mt-32">
             
-            {/** Gives background a cool blur with a slightly coloured center to it. */}
+            {/** BACKGROUND: Gives background a cool blur with a slightly coloured center to it. */}
             <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"/>
 
-            {/* Green Dots */}
+            {/* BACKGROUND: Green Dots */}
             <div className="absolute inset-0 overflow-hidden pointer-events-auto">
                 {[...Array(60)].map((_,i) => 
                     (
@@ -35,11 +35,9 @@ export const Tutoring = () => {
                 <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground"> Learn the basics {' '} <span className="font-serif italic font-normal text-white"> from an expert. </span> </h2>
             </div>
 
-            {/* Content - Take the box format from Education section. */}
-            <div className="items-center min-h-screen mx-auto lg:w-2/3 w-4/5">
-                
+            {/* First Sections */}
+            <div className="items-center mb-4 md:mb-6 mx-auto lg:w-2/3 w-4/5">
 
-                
                 <div className="relative">
 
                     <div className="text-center">
@@ -51,36 +49,55 @@ export const Tutoring = () => {
                             <span className="text-xl text-white font-medium italic">
                                 Montreal, Quebec
                             </span>
-                            <h3 className="text-2xl font-semibold mt-2"> <span className="text-secondary-foreground font-medium tracking-wider uppercase animate-fade-in"> Python Beginner Course </span> </h3>
+                            <h3 className="text-xl sm:text-2xl font-semibold mt-2"> <span className="text-secondary-foreground font-medium tracking-wider uppercase animate-fade-in"> Python Beginner Course </span> </h3>
                             
                             <div className="bg-gray-900 rounded-3xl m-8 border-2 border-emerald-800"> 
-                                <p className="font-serif font-normal text-secondary-foreground text-3xl text-wrap px-8 py-8">
+                                <p className="font-serif font-normal text-secondary-foreground text-lg sm:text-3xl text-wrap px-4 py-4 sm:px-8 sm:py-8">
                                     In just six lessons, you or your child can <span className="font-bold italic text-secondary-foreground-1">learn the basics</span> of the <span className="font-bold text-secondary-foreground-2">Python Programming language</span>.                    
                                 </p>
                             </div>
 
-                            {/** Increase margins and text size above screen sizes */}
+                            {/** Increase margins and text size above screen sizes
+                             *   Done: But double check on computer
+                             */}
 
                         </div>
                     </div>
-
-                    {/** Add some space here!
-                     * I wouldn't mind if the other block below looks a little more glassy
-                     * 
-                     * grid md:grid-cols-2
-                     * 
-                     * <div className="relative grid grid-cols-3 glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500"> 
-                        <div className="text-right font-serif italic font-normal text-secondary-foreground"> The main language used for creating and training AI models. </div>
-                        <img src="/python_logo.png" alt="Python Logo" className=""/>    
-                        <div className="font-serif italic font-normal text-secondary-foreground"> One of the most popular programming languages on Earth. </div>
-                    </div>
-                     * 
-                     */}
-
-                    
                 </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 mb-4 md:mb-6 content-center justify-items-center h-64">
+                
+                <Button className="mx-2 md:mx-4 my-4 md:my-6 w-1/3"> Sign Up Now! </Button>
+                {/** Make this one on top of the other until md screen size then next to each other. Also, make it the cool button maybe.
+                 * <Button> Learn About Your Tutor (Me!) </Button>  flex my-6 md:my-12 */}
+                <Button className="mx-2 md:mx-4 my-4 md:my-6 w-1/3"> Meet Your Tutor! </Button>
 
             </div>
+
+            {/* Second Section */}
+            <div className="items-center mx-auto lg:w-2/3 w-4/5">
+
+                <div className="relative">
+
+                    <div className="text-center">
+
+                        <div className="glass p-6 rounded-2xl border  border-primary/30 hover:border-primary/50 transition-all duration-200">
+                            
+                            <div className="bg-gray-900 rounded-3xl m-8 border-2 border-emerald-800"> 
+                                <p className="font-serif font-normal text-secondary-foreground text-lg sm:text-3xl text-wrap px-4 py-4 sm:px-8 sm:py-8">
+                                    In just six lessons, you or your child can <span className="font-bold italic text-secondary-foreground-1">learn the basics</span> of the <span className="font-bold text-secondary-foreground-2">Python Programming language</span>.                    
+                                </p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     );
 }
