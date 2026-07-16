@@ -66,12 +66,12 @@ export const Tutoring = () => {
                 </div>
             </div>
 
-            <div className="grid md:grid-cols-2 mb-4 md:mb-6 content-center justify-items-center h-64">
+            <div className="grid md:grid-cols-2 mb-4 md:mb-6 content-center justify-items-center h-48">
                 
-                <Button className="mx-2 md:mx-4 my-4 md:my-6 w-1/3"> Sign Up Now! </Button>
+                <Button className="md:ml-36 my-4 md:my-6 w-1/3 sm:w-1/3 md:w-1/2 lg:w-2/5 md:h-20 md:text-xl 2xl:w-1/3 2xl:ml-64"> Sign Up Now! </Button>
                 {/** Make this one on top of the other until md screen size then next to each other. Also, make it the cool button maybe.
                  * <Button> Learn About Your Tutor (Me!) </Button>  flex my-6 md:my-12 */}
-                <Button className="mx-2 md:mx-4 my-4 md:my-6 w-1/3"> Meet Your Tutor! </Button>
+                <Button className="md:mr-36 my-4 md:my-6 w-2/5 sm:w-1/3 md:w-1/2 lg:w-2/5 md:h-20 md:text-xl 2xl:w-1/3 2xl:mr-64 bg-secondary-foreground-2 hover:bg-secondary-foreground-2/90"> Meet Your Tutor! </Button>
 
             </div>
 
