@@ -22,6 +22,9 @@
 
   --color-highlighted: #f5a623;
   --color-surface: #1a2329;
+
+  --breakpoint-txbp1: 70.5rem;
+  --breakpoint-txbp2: 58.75rem;
 }
 
 @layer base {

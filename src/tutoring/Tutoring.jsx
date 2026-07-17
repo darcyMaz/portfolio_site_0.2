@@ -66,37 +66,77 @@ export const Tutoring = () => {
                 </div>
             </div>
 
+            {/** Some CTA buttons */}
             <div className="grid md:grid-cols-2 mb-4 md:mb-6 content-center justify-items-center h-48">
-                
-                <Button className="md:ml-36 my-4 md:my-6 w-1/3 sm:w-1/3 md:w-1/2 lg:w-2/5 md:h-20 md:text-xl 2xl:w-1/3 2xl:ml-64"> Sign Up Now! </Button>
-                {/** Make this one on top of the other until md screen size then next to each other. Also, make it the cool button maybe.
-                 * <Button> Learn About Your Tutor (Me!) </Button>  flex my-6 md:my-12 */}
-                <Button className="md:mr-36 my-4 md:my-6 w-2/5 sm:w-1/3 md:w-1/2 lg:w-2/5 md:h-20 md:text-xl 2xl:w-1/3 2xl:mr-64 bg-secondary-foreground-2 hover:bg-secondary-foreground-2/90"> Meet Your Tutor! </Button>
+                <Button className="md:ml-36 my-4 md:my-6 w-2/5 sm:w-1/3 md:w-1/2 lg:w-2/5 md:h-20 md:text-xl 2xl:w-1/3 2xl:ml-64 bg-secondary-foreground-2 hover:bg-secondary-foreground-2/90"> Meet Your Tutor! </Button>
 
+                <Button className="md:mr-36 my-4 md:my-6 w-2/5 sm:w-1/3 md:w-1/2 lg:w-2/5 md:h-20 md:text-xl 2xl:w-1/3 2xl:mr-64"> Sign Up Now! </Button>
             </div>
 
             {/* Second Section */}
-            <div className="items-center mx-auto lg:w-2/3 w-4/5">
+            <div className="items-center mx-auto lg:w-2/3 w-4/5 mb-8 md:mb-16">
 
                 <div className="relative">
 
                     <div className="text-center">
 
-                        <div className="glass p-6 rounded-2xl border  border-primary/30 hover:border-primary/50 transition-all duration-200">
+                        {/** Small grid */}
+                        <div className="glass grid md:grid-cols-3 p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-200">
                             
-                            <div className="bg-gray-900 rounded-3xl m-8 border-2 border-emerald-800"> 
-                                <p className="font-serif font-normal text-secondary-foreground text-lg sm:text-3xl text-wrap px-4 py-4 sm:px-8 sm:py-8">
-                                    In just six lessons, you or your child can <span className="font-bold italic text-secondary-foreground-1">learn the basics</span> of the <span className="font-bold text-secondary-foreground-2">Python Programming language</span>.                    
+                            <div className="bg-gray-900 rounded-3xl my-4 mx-16 sm:mx-24 md:mx-2 border-2 border-emerald-800" > 
+                                <p className="font-serif font-normal text-secondary-foreground text-xl sm:text-2xl text-wrap px-2 py-2 sm:px-4 sm:py-4">
+                                    Six Lessons
                                 </p>
                             </div>
 
+                            <div className="bg-gray-900 rounded-3xl my-4 mx-16 sm:mx-24 md:mx-2 border-2 border-emerald-800"> 
+                                <p className="font-serif font-normal text-secondary-foreground text-xl sm:text-2xl text-wrap px-2 py-2 sm:px-4 sm:py-4">
+                                    Eight Hours
+                                </p>
+                            </div>
 
+                            <div className="bg-gray-900 rounded-3xl my-4 mx-16 sm:mx-24 md:mx-2 border-2 border-emerald-800"> 
+                                <p className="font-serif font-normal text-secondary-foreground text-xl sm:text-2xl md:text-lg txbp2:text-2xl lg:text-xl txbp1:text-2xl text-wrap px-2 py-2 sm:px-4 sm:py-4">
+                                    Reasonable Price
+                                </p>
+                            </div>
 
                         </div>
+
                     </div>
                 </div>
             </div>
 
+            
+            <div className="items-center mx-auto w-4/5">
+                <div className="relative">
+                    <div className="text-center">
+
+                        <div className="glass grid 2xl:grid-cols-2 p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-200">
+                            {/** Meet your tutor 
+                             * Title
+                             * Pic - Bio
+                            */}
+                            <div className="mx-6 justify-items-center">
+                                <div className="bg-gray-900 rounded-3xl my-4 mx-4 sm:mx-18 md:mx-24 lg:mx-48 xl:mx-64 2xl:mx-8 border-2 border-emerald-800">
+                                    <p className="font-serif font-normal text-secondary-foreground text-xl sm:text-2xl text-wrap px-2 py-2 sm:px-4 sm:py-4">
+                                        Meet Your Tutor!
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/** With Python You Can:
+                             * Title
+                             * Domain - Explanation
+                             */}
+                            <div className="mx-6">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
     );
