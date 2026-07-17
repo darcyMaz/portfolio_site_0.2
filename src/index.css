@@ -25,6 +25,10 @@
 
   --breakpoint-txbp1: 70.5rem;
   --breakpoint-txbp2: 58.75rem;
+
+  --breakpoint-biotxt1: 88rem;
+  --breakpoint-biotxt2: 101.625rem;
+  --breakpoint-biotxt3: 110rem;
 }
 
 @layer base {

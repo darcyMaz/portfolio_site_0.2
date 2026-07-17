@@ -108,21 +108,57 @@ export const Tutoring = () => {
             </div>
 
             
-            <div className="items-center mx-auto w-4/5">
+            <div className="items-center mx-auto w-5/6">
                 <div className="relative">
                     <div className="text-center">
 
-                        <div className="glass grid 2xl:grid-cols-2 p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-200">
+                        <div className="glass grid lg:grid-cols-2 p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-200">
                             {/** Meet your tutor 
                              * Title
                              * Pic - Bio
+                             * More Bio
                             */}
-                            <div className="mx-6 justify-items-center">
-                                <div className="bg-gray-900 rounded-3xl my-4 mx-4 sm:mx-18 md:mx-24 lg:mx-48 xl:mx-64 2xl:mx-8 border-2 border-emerald-800">
+                            <div className="mx-6 xl:mx-6 lg:mx-0 justify-items-center">
+
+                                {/** Title */}
+                                <div className="bg-gray-900 rounded-3xl my-4 mx-4 sm:mx-18 md:mx-24 lg:mx-16 xl:mx-24 2xl:mx-28 border-2 border-emerald-800">
                                     <p className="font-serif font-normal text-secondary-foreground text-xl sm:text-2xl text-wrap px-2 py-2 sm:px-4 sm:py-4">
                                         Meet Your Tutor!
                                     </p>
                                 </div>
+
+                                {/** Bio - Pic */}
+                                <div className="grid md:grid-cols-2">
+
+                                    {/** Bio */}
+                                    <div className="grid bg-gray-900 rounded-2xl border-3 border-emerald-800 text-justify font-serif font-normal text-emerald-300 xl:text-md biotxt1:text-lg biotxt2:text-xxl biotxt3:text-2xl">
+                                        <p className="px-2 py-4">
+                                            &#x2022; Graduate from McGill with a Bachelors in Computer Science and Political Science.
+                                        </p>
+                                        <p className="px-2 py-4">
+                                            &#x2022; Currently studying Video Game Design at Dawson College.
+                                        </p>
+                                        <p className="px-2 py-4">
+                                            &#x2022; An experienced peer tutor at the Dawson Student Center.
+                                        </p>
+
+                                    </div>
+
+                                    {/** Pic */}
+                                    <div className="">
+                                        <div className="bg-gray-900 rounded-3xl my-4 mx-16 sm:mx-24 md:mx-20 lg:mx-8 2xl:mx-14 border-2 border-emerald-800 "> 
+                                            <p className="font-serif font-normal text-secondary-foreground text-lg sm:text-xl text-wrap">
+                                                Darcy Mazloum
+                                            </p>
+                                        </div>
+
+                                        <div className="rounded border-4 xl:mb-12 xl:mx-12 lg:mb-8 lg:mx-8 border-emerald-950 overflow-hidden">
+                                            <img src="/dm_grad.jpg" alt="Darcy Mazloum in a graduation gown holding a diploma that says 'Class of 2024'" />
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
                             </div>
 
                             {/** With Python You Can:
@@ -130,8 +166,14 @@ export const Tutoring = () => {
                              * Domain - Explanation
                              */}
                             <div className="mx-6">
-
+                                <div className="bg-gray-900 rounded-3xl my-4 sm:mx-18 md:mx-24 lg:mx-48 xl:mx-24 2xl:mx-24 border-2 border-emerald-800">
+                                    <p className="font-serif font-normal text-secondary-foreground text-xl sm:text-2xl text-wrap px-2 py-2 sm:px-4 sm:py-4">
+                                        With <span className="italic text-secondary-foreground-2"> Python  </span> you can...
+                                    </p>
+                                </div>
                             </div>
+
+
                         </div>
 
                     </div>
