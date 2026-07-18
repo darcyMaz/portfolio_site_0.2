@@ -26,9 +26,17 @@
   --breakpoint-txbp1: 70.5rem;
   --breakpoint-txbp2: 58.75rem;
 
-  --breakpoint-biotxt1: 88rem;
-  --breakpoint-biotxt2: 101.625rem;
-  --breakpoint-biotxt3: 110rem;
+  --breakpoint-fxl: 88rem;
+  --breakpoint-sxl: 91rem;
+  --breakpoint-3xl: 110rem;
+
+  --breakpoint-sm1: 690px;
+  --breakpoint-sm2: 720px;
+  --breakpoint-sm3: 740px;
+
+  --breakpoint-md1: 49.375rem;
+  --breakpoint-md2: 52.5rem;
+  --breakpoint-md3: 60rem;
 }
 
 @layer base {
